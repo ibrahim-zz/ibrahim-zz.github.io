@@ -8,7 +8,7 @@
 <meta property="og:description" content="مواقع تعريفية، لوحات تحكم، ومنصات سحابية بواجهة عربية. عمل حر موثّق.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0b0e1a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234d7cff'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='Tahoma'%3E%D8%A5%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234d7cff'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='Tahoma'%3E%D8%B2%3C/text%3E%3C/svg%3E">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>إبراهيم الزهراني</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
 .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;text-decoration:none;font-size:1.05rem}
-.mark{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-size:1rem}
+.mark{width:36px;height:36px;border-radius:9px;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.95rem;line-height:1}
 .nav nav{display:flex;gap:22px;font-size:.95rem}
 .nav nav a{text-decoration:none;color:var(--muted)}
 .nav nav a:hover{color:var(--fg)}
@@ -55,7 +55,7 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background
 .hero .wrap>*{min-width:0}
 .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.85rem;color:var(--muted)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 25%,transparent)}
-.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);font-weight:800;margin-top:20px;letter-spacing:-.01em}
+.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:800;margin-top:20px;line-height:1.45}
 .hero h1 .hl{color:var(--accent)}
 .hero p.lead{color:var(--muted);font-size:1.15rem;max-width:34em;margin:18px 0 28px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
@@ -64,7 +64,7 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background
 .btn:hover{transform:translateY(-1px)}
 
 .term{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -30px color-mix(in srgb,var(--accent) 45%,transparent)}
-.term .bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.term .bar{display:flex;direction:ltr;gap:6px;padding:12px 14px;border-bottom:1px solid var(--line)}
 .term .bar i{width:10px;height:10px;border-radius:50%;background:var(--line)}
 .term pre{margin:0;padding:18px 20px;font-family:var(--mono);font-size:.86rem;line-height:1.9;direction:ltr;text-align:left;white-space:pre-wrap;color:var(--muted)}
 .term .k{color:var(--accent)} .term .s{color:var(--accent-2)} .term .g{color:var(--ok)}
@@ -73,7 +73,7 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background
 
 /* sections */
 section.block{padding-block:72px;border-top:1px solid var(--line)}
-.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;color:var(--accent-2);direction:ltr;unicode-bidi:isolate}
+.eyebrow{align-self:flex-start;font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;color:var(--accent-2);direction:ltr;unicode-bidi:isolate}
 .head{display:flex;flex-direction:column;gap:8px;margin-bottom:36px}
 .head h2{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:700}
 .head p{color:var(--muted);margin:0;max-width:40em}
@@ -149,7 +149,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top"><span class="mark">إ</span>إبراهيم الزهراني</a>
+    <a class="brand" href="#top"><span class="mark">إز</span>إبراهيم الزهراني</a>
     <nav aria-label="أقسام الموقع">
       <a href="#services">الخدمات</a>
       <a href="#work">الأعمال</a>
@@ -164,7 +164,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="wrap">
       <div>
         <span class="badge"><span class="dot"></span>متاح لمشاريع جديدة · عمل حر موثّق</span>
-        <h1>أبني لك موقعك ونظامك<br><span class="hl">من الفكرة إلى الإطلاق</span></h1>
+        <h1>أبني لك موقعك ونظامك <span class="hl">من الفكرة إلى الإطلاق</span></h1>
         <p class="lead">مطوّر مواقع وأنظمة ويب مستقل، مسجّل بوثيقة العمل الحر لدى وزارة الموارد البشرية. أصمم وأبرمج مواقع تعريفية ولوحات تحكم ومنصات سحابية متكاملة، بواجهة عربية تعمل بإتقان على الجوال.</p>
         <div class="cta">
           <a class="btn primary" href="#contact">ابدأ مشروعك</a>
@@ -357,5 +357,6 @@ document.getElementById("contactForm").addEventListener("submit",e=>{
   out.style.color="var(--ok)";out.textContent="فتحنا لك واتساب بالرسالة جاهزة.";
 });
 </script>
+
 </body>
 </html>
