@@ -51,12 +51,14 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background
 @media (max-width:640px){.nav nav{display:none}}
 
 /* hero */
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-block:72px 64px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding-block:72px 64px}
 .hero .wrap>*{min-width:0}
 .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.85rem;color:var(--muted)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 25%,transparent)}
-.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:800;margin-top:20px;line-height:1.45}
-.hero h1 .hl{color:var(--accent);display:block}
+.hero h1{font-size:clamp(1.9rem,4vw,3.1rem);font-weight:800;margin-top:20px;line-height:1.5;text-wrap:initial}
+.hero h1 .ln{display:block}
+@media (min-width:861px){.hero h1 .ln{white-space:nowrap}}
+.hero h1 .hl{color:var(--accent)}
 .hero p.lead{color:var(--muted);font-size:1.15rem;max-width:34em;margin:18px 0 28px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:transparent;color:var(--fg);font-family:var(--body);font-size:1rem;cursor:pointer}
@@ -73,7 +75,8 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background
 
 /* sections */
 section.block{padding-block:72px;border-top:1px solid var(--line)}
-.eyebrow{align-self:flex-start;font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;color:var(--accent-2);direction:ltr;unicode-bidi:isolate}
+.eyebrow{align-self:flex-start;font-size:.92rem;font-weight:600;color:var(--accent-2);display:flex;align-items:center;gap:8px}
+.eyebrow::before{content:"";width:18px;height:2px;border-radius:2px;background:currentColor}
 .head{display:flex;flex-direction:column;gap:8px;margin-bottom:36px}
 .head h2{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:700}
 .head p{color:var(--muted);margin:0;max-width:40em}
@@ -164,7 +167,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="wrap">
       <div>
         <span class="badge"><span class="dot"></span>متاح لمشاريع جديدة · عمل حر موثّق</span>
-        <h1>أبني لك موقعك ونظامك <span class="hl">من الفكرة إلى الإطلاق</span></h1>
+        <h1><span class="ln">أبني لك موقعك ونظامك</span><span class="ln hl">من الفكرة إلى الإطلاق</span></h1>
         <p class="lead">مطوّر مواقع وأنظمة ويب مستقل، مسجّل بوثيقة العمل الحر لدى وزارة الموارد البشرية. أصمم وأبرمج مواقع تعريفية ولوحات تحكم ومنصات سحابية متكاملة، بواجهة عربية تعمل بإتقان على الجوال.</p>
         <div class="cta">
           <a class="btn primary" href="#contact">ابدأ مشروعك</a>
@@ -191,7 +194,7 @@ ibrahim-alzahrani · web developer
   <section class="block" id="services">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow">// SERVICES</span>
+        <span class="eyebrow">ماذا أقدّم</span>
         <h2>الخدمات</h2>
         <p>كل الخدمات ضمن نشاط برمجة وتطوير المواقع المسجّل في وثيقة العمل الحر.</p>
       </div>
@@ -239,7 +242,7 @@ ibrahim-alzahrani · web developer
   <section class="block" id="work">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow">// WORK</span>
+        <span class="eyebrow">مشاريع منفّذة</span>
         <h2>الأعمال</h2>
         <p>مشاريع حقيقية شغّالة يستخدمها الناس اليوم.</p>
       </div>
@@ -289,7 +292,7 @@ ibrahim-alzahrani · web developer
   <section class="block" id="contact">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow">// CONTACT</span>
+        <span class="eyebrow">ابدأ الآن</span>
         <h2>خلّنا نبدأ مشروعك</h2>
         <p>اكتب فكرتك باختصار، وأرد عليك خلال يوم عمل.</p>
       </div>
