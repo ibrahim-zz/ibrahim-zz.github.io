@@ -238,6 +238,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .st p{margin:0;color:var(--muted);font-size:.96rem}
 .case .mods{max-width:none;grid-template-columns:repeat(6,1fr)}
 .case .mod{background:var(--bg)}
+.case+.case{margin-top:28px}
+.case .stack{display:flex;flex-wrap:wrap;gap:6px}
+.case .stack span{font-size:.8rem;padding:3px 10px;border-radius:6px;background:color-mix(in srgb,var(--accent-2) 14%,transparent);color:var(--accent-2)}
 @media (max-width:900px){.story{grid-template-columns:1fr}.st{padding-inline:0!important}.st+.st{border-inline-start:0;border-top:1px solid var(--line)}.case .mods{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:520px){.case{padding:22px}.case .mods{grid-template-columns:1fr 1fr}}
 
@@ -445,6 +448,30 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
           </div>
         </div>
       </article>
+      <article class="case">
+        <div class="case-top">
+          <div class="case-id">
+            <span class="badge"><span class="dot"></span>مباشر على taameer.org.sa</span>
+            <h3>جمعية تعمير</h3>
+            <p>الموقع الإلكتروني لجمعية تعمير لإنشاء المساجد والعناية بها بالمندق: موقع تعريفي مع لوحة تحكم ومتجر تبرعات.</p>
+            <div class="stack"><span>PHP</span><span>MySQL</span><span>برمجة خاصة بدون قوالب جاهزة</span><span>بوابة ميسّر</span></div>
+          </div>
+          <a class="btn primary" href="https://taameer.org.sa" target="_blank" rel="noopener">زيارة الموقع ↗</a>
+        </div>
+        <div class="story">
+          <div class="st"><span class="k">المطلوب</span><p>موقع رسمي يعرّف بالجمعية ومشاريعها، ويستقبل التبرعات إلكترونياً، وتدير الجمعية محتواه بنفسها.</p></div>
+          <div class="st"><span class="k">الحل</span><p>موقع مبرمج خصيصاً بلغة PHP وقاعدة MySQL، فيه لوحة تحكم ومتجر تبرعات مربوط ببوابة ميسّر وبرنامج محاسبي خفيف.</p></div>
+          <div class="st"><span class="k">النتيجة</span><p>موقع يعمل على النطاق الرسمي للجمعية ويستقبل التبرعات. نُفّذ بعقد رسمي، والجمعية اليوم عميل دائم.</p></div>
+        </div>
+        <div class="mods">
+          <div class="mod"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>موقع تعريفي كامل</div>
+          <div class="mod"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>لوحة تحكم بالمحتوى</div>
+          <div class="mod"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>متجر تبرعات إلكتروني</div>
+          <div class="mod"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>ربط بوابة الدفع ميسّر</div>
+          <div class="mod"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h2M14 11h2M8 15h2M14 15h2M8 19h8"/></svg>برنامج محاسبي خفيف</div>
+          <div class="mod"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V21h16"/></svg>رفع وتشغيل وأدلة استخدام</div>
+        </div>
+      </article>
       <div class="soon"><span style="color:var(--accent-2);font-weight:600">قريباً</span>مشاريع جديدة قيد التنفيذ، تُضاف هنا قريباً.</div>
     </div>
   </section>
@@ -474,7 +501,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         </div>
         <div class="about-t">
           <p>أنا إبراهيم أحمد، مطوّر مواقع وأنظمة ويب مستقل، مسجّل بوثيقة العمل الحر لدى وزارة الموارد البشرية والتنمية الاجتماعية.</p>
-          <p>بنيت منصة <b>كادر بلس</b> لإدارة الجمعيات الأهلية من الصفر، وهي اليوم تعمل على الويب ومعها تطبيق جوال. نفس الخبرة أضعها في موقعك أو نظامك.</p>
+          <p>بنيت منصة <b>كادر بلس</b> لإدارة الجمعيات الأهلية من الصفر، وهي اليوم تعمل على الويب ومعها تطبيق جوال، ونفّذت موقع <b>جمعية تعمير</b> مع متجر تبرعات مربوط ببوابة دفع. نفس الخبرة أضعها في موقعك أو نظامك.</p>
           <p>أتولّى مشروعك بنفسي تصميماً وبرمجةً وإطلاقاً، وتبقى على تواصل مباشر معي في كل مرحلة، فتحصل على عناية بالتفاصيل والتزام بالمواعيد.</p>
         </div>
       </div>
